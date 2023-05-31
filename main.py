@@ -52,12 +52,12 @@ def calculate_points(knowledge, experience, investment_period, investment_goal, 
     points = 0
 
     knowledge_dict = {'Ninguno': 0, 'Básico': 2, 'Intermedio': 5, 'Avanzado': 10}
-    experience_dict = {'Ninguna': 0, 'Depósitos a plazo': 2, 'Fondos comunes de inversión': 4, 'Acciones': 6, 'Bonos': 8, 'Criptomonedas': 10, 'Otros': 5}
+    experience_dict = {'Ninguna': 0, 'Depósitos a plazo': 2, 'Fondos comunes de inversión': 4, 'Acciones': 6, 'Bonos': 8, 'Criptomonedas': 10, 'Real Estate': 5}
     period_dict = {'Menos de 1 año': 10, '1-3 años': 8, '3-5 años': 6, '5-10 años': 4, 'Más de 10 años': 2}
     goal_dict = {'Preservación de capital': 2, 'Crecimiento del capital': 4, 'Ingresos regulares': 6, 'Alto rendimiento a largo plazo': 8, 'Alto rendimiento a corto plazo': 10}
     loss_dict = {'Vendería todo': 0, 'Vendería parte': 4, 'Mantendría y observaría': 7, 'Invertiría más': 10}
     risk_dict = {'Muy bajo': 0, 'Bajo': 2, 'Moderado': 5, 'Alto': 7, 'Muy alto': 10}
-    review_dict = { 'Semanalmente': 10, 'Mensualmente': 8, 'Cada 3-6 meses': 4, 'Anualmente o menos frecuentemente': 2}
+    review_dict = {'Semanalmente': 10, 'Mensualmente': 8, 'Cada 3-6 meses': 4, 'Anualmente o menos frecuentemente': 2}
 
     points += knowledge_dict[knowledge]
     if experience:
